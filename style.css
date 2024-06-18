@@ -166,7 +166,7 @@ main section {
 	flex-direction: column;
 	text-align: center;
 	display: flex;
-	font-size: 1rem;
+	font-size: 1vw;
 	border: #ff0000;
 	border-radius: 10px 0 0 10px;
 	border-style: solid;
@@ -183,13 +183,13 @@ main section {
 	height: 60vh;
 }
 .size1 {
-	font-size: 1.1rem;
+	font-size: 1vw;
 }
 .size2 {
-	font-size: 1.2rem;
+	font-size: 1vw;
 }
 .size4 {
-	font-size: 1.4rem;
+	font-size: 1vw;
 }
 
 .line {
@@ -201,4 +201,21 @@ main section {
 
 #contactUs {
 	padding: 0 10vw 0 10vw;
+}
+
+@media screen and (max-width: 1000px) {
+	.line {
+		opacity: 0;
+	}
+
+	.nextBox {
+		display: none;
+		opacity: 0;
+	}
+	.textbox {
+		font-size: 2vw;
+	}
+	.not_needed {
+		display: none;
+	}
 }
