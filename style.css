@@ -59,8 +59,8 @@ header {
 
 nav ul {
 	display: flex;
-	justify-content: center;
-	width: 55vw;
+	justify-content: left;
+	width: 50%;
 }
 nav ul li {
 	list-style: none;
@@ -201,6 +201,12 @@ main section {
 
 #contactUs {
 	padding: 0 10vw 0 10vw;
+	font-size: 1.2rem;
+}
+
+.header {
+	font-size: 2vw;
+	color: green;
 }
 
 @media screen and (max-width: 1000px) {
@@ -217,5 +223,8 @@ main section {
 	}
 	.not_needed {
 		display: none;
+	}
+	nav ul {
+		width: 100%;
 	}
 }
