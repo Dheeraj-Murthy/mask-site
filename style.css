@@ -182,15 +182,6 @@ main section {
 .sizeup2 {
 	height: 60vh;
 }
-.size1 {
-	font-size: 1vw;
-}
-.size2 {
-	font-size: 1vw;
-}
-.size4 {
-	font-size: 1vw;
-}
 
 .line {
 	position: absolute;
@@ -215,8 +206,52 @@ main section {
 	}
 
 	.nextBox {
+		width: 200%;
+		object-fit: contain;
+		border: none;
+	}
+	.textbox {
+		height: auto;
+		border: none;
+	}
+	.to_right {
+		height: auto;
+		border-width: 1px 4px 4px 3px;
+		border-color: red;
+		border-style: solid;
+	}
+
+	.blank {
 		display: none;
-		opacity: 0;
+	}
+
+	.size4 {
+		font-size: 1vw;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	nav ul {
+		width: 60vw;
+		justify-content: end;
+		margin-right: 10px;
+	}
+	nav ul li {
+		margin: 5px;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.nextBox {
+		display: none;
+	}
+
+	.to_right {
+		height: 50vh;
+		font-size: 4rem;
 	}
 	.textbox {
 		font-size: 2vw;
@@ -224,7 +259,45 @@ main section {
 	.not_needed {
 		display: none;
 	}
+
+	nav ul {
+		justify-content: end;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.nextBox {
+		display: none;
+		opacity: 0;
+	}
+	.textbox {
+		font-size: 3vw;
+	}
+	.not_needed {
+		display: none;
+	}
 	nav ul {
 		width: 100%;
+		margin-right: 10px;
+	}
+	nav ul li {
+		margin: 0 3%;
+		font-size: 70%;
+	}
+	.left {
+		font-size: 100%;
+	}
+	.image-container {
+		width: 90%;
+	}
+	#contactUs {
+		font-size: 50%;
+	}
+	.header {
+		font-size: 1rem;
+	}
+
+	.to-remove {
+		display: none;
 	}
 }
